@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <title>Mentoria</title>
+</head>
+
+<body>
+    <div class="page"></div>
+    <header>
+        <h1>MENTORIA</h1>
+        <p>Fill up the form below <br>to book you mentorship</p>
+    </header>
+    <form id="form">
+        <fieldset class="fieldset-wrapper">
+            <legend>Personal information</legend>
+            <div class="two-col">
+                <div class="input-wrapper">
+                    <label for="event-name">Name</label>
+                    <input required type="text" id="event-name">
+                </div>
+                <div class="input-wrapper">
+                    <label for="event-surname">Surname</label>
+                    <input required type="text" id="event-surname">
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <label for="event-email">E-mail <span>(inform a valid e-mail)</span></label>
+                <input required type="email" id="event-email">
+            </div>
+            <div class="input-wrapper">
+                <label for="event-password">Password <span>(8 character minimum)</span></label>
+                <input required minlength="8" type="password" id="event-password">
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldset-wrapper">
+            <legend>Mentor information</legend>
+            <div class="input-wrapper">
+                <label for="event-mentor">Select a mentor</label>
+                <select id="event-mentor">
+                    <option value="Rita">Rita</option>
+                    <option value="George">George</option>
+                    <option value="Phil">Phil</option>
+                    <option value="Regina">Regina</option>
+                    <option value="Stacy">Stacy</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldset-wrapper">
+            <legend>Your schedule preferences</legend>
+            <h2>First option</h2>
+            <div class="threecol">
+                <div class="input-wrapper">
+                    <label for="event-date">Date</label>
+                    <input required type="date" id="event-date">
+                </div>
+                <div class="input-wrapper">
+                   <label for="event-form">form</label>
+                   <input required type="time" id="event-form">
+                </div>
+                <div class="input-wrapper">
+                    <label for="event-to">to</label>
+                    <input required type="time" id="event-to">
+                </div>
+            </div>    
+
+            <h2>Second option</h2>
+            <div class="threecol">
+                <div class="input-wrapper">
+                    <label for="event-date">Date</label>
+                    <input type="date" id="event-date">
+                </div>
+                <div class="input-wrapper">
+                   <label for="event-form">form</label>
+                   <input type="time" id="event-form">
+                </div>
+                <div class="input-wrapper">
+                    <label for="event-to">to</label>
+                    <input type="time" id="event-to">
+                </div>
+            </div>    
+
+        </fieldset>
+    </form>
+
+        <footer>
+            <input 
+            class="button"
+            type="submit" 
+            value="Save and submit" form="form">
+            </footer>
+
+    </div>
+</body>
+
+</html>

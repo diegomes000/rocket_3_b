@@ -1,0 +1,207 @@
+.page {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E5E5E5;
+    margin-left:340px;
+}
+
+header {
+    margin-top: 140px;
+}
+
+header h1 {
+    font-family: 'Staatliches', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+header p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+
+    margin-top: 18px;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 458px;
+    background: #535971;
+    z-index: -1;
+}
+
+#form {
+    width: 750px;
+    height: auto;
+    top: 340px;
+    background: #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    padding: 64px 64px 32px 64px;
+    margin-top: 60px;
+}
+
+.fieldset-wrapper {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.fieldset-wrapper legend {
+    font-family: 'Staatliches', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #535971;
+
+    border-bottom: #E6E6F0 solid 1px;
+    width: 100%;
+    padding-bottom: 08px;
+    margin-bottom: 32px;
+
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-wrapper label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+}
+
+.input-wrapper label span {
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+    margin-left: 10px;
+}
+
+.input-wrapper input, .fieldset-wrapper select {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    height: 56px;
+    padding: 0 24px;
+
+    font-family: 'Poppins', sans-serif;
+    color: #4E4958;
+    font-size: 14px;
+}
+
+.input-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right 24px top 50%;
+}
+
+
+.two-col {
+    display: flex; 
+    width: 100%;
+    gap: 22px;
+}
+
+.two-col > div:nth-child(1) {
+    width: 50%;
+}
+
+.two-col > div:nth-child(2) {
+    width: 50%;
+}
+
+.fieldset-wrapper h2 {
+    font-family: 'Staatliches', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #535971;
+    margin-top: -8px;
+}
+
+.threecol {
+    margin-top: -25px;
+}
+
+.fieldset-wrapper .threecol {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.threecol > div:nth-child(1) {
+    width: 50%;
+    margin-right: 22px;
+}
+
+.threecol > div:nth-child(2) {
+    width: 25%;
+}
+
+.threecol > div:nth-child(3) {
+    width: 25%;
+}
+
+.threecol input {
+    margin-bottom: 16px;
+}
+
+footer {
+    background-color: #535971;
+    border-radius: 0px 0px 20px 20px;
+    width: 878px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 150px;
+}
+
+footer input {
+
+    padding: 15px 40px;
+
+    width: 600px;
+    height: 56px;
+
+
+    background: #FF5374;
+    border-radius: 20px;
+    border: none;
+
+    font-family: 'Staatliches',sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+
+footer input:hover {
+    background: #a8364d;
+    transition: 1s;
+}
+
+input:invalid {
+    border-color: 2px solid tomato;
+}
